@@ -30,6 +30,7 @@ function TodoList() {
   }
   return (
     <div className="todo-list">
+      <h2 className="component-title">To Do List</h2>
       {tasks.map((task) => (
         <TodoItem
           key={task.id}
