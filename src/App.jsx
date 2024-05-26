@@ -43,8 +43,10 @@ function App() {
       {/* Conditionally render the user information and a logout button only after a profile has been retrieved */}
       {profile ? (
         <div>
-          <p>Hello, {profile.name}</p>
-          <button onClick={logOut}>Log out</button>
+          <header>
+            <p>Hello, {profile.name}</p>
+            <button onClick={logOut}>Log out</button>
+          </header>
           <TodoList />
         </div>
       ) : (
